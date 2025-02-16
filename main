@@ -1,3 +1,5 @@
+import random
+
 def generate_quote():
     replies = """
 3 Tips to Staying Positive:  Look back and be grateful… Look ahead and be hopeful… Look around and be helpful…
@@ -118,4 +120,6 @@ You have to fight through some bad days to earn the best days to your life.
 Your struggle may go unnoticed but your results won't.
               """.splitlines()
     r = random.choice(replies).strip()
-    return r
+    print(r)
+
+generate_quote()
